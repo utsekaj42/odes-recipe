@@ -1,0 +1,30 @@
+package:
+  name: scikits.odes
+  version: "2.3.2"
+
+source:
+  git_rev: 73b6548
+  git_url: https://github.com/utsekaj42/odes.git
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - cython
+    - scipy
+    - gcc
+    - sundials
+  run:
+    - python
+    - cython
+    - scipy
+    - sundials
+
+test:
+  imports:
+    - scikits.odes
+
+about:
+  home: https://github.com/utsekaj42/odes
+  license: ""
+  license_file: LICENSE.txt

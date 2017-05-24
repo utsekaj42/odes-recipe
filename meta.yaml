@@ -21,7 +21,7 @@ requirements:
     - sundials
 
 test:
-  requirements:
+  requires:
     - nose
   imports:
     - scikits.odes

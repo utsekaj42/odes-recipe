@@ -10,9 +10,9 @@ requirements:
   build:
     - python
     - setuptools
+    - gcc
     - cython
     - scipy
-    - gcc
     - sundials
   run:
     - python
@@ -21,6 +21,8 @@ requirements:
     - sundials
 
 test:
+  requirements:
+    - nose
   imports:
     - scikits.odes
 
